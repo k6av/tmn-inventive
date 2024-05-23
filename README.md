@@ -2,6 +2,15 @@
 TMN "_Inventive_" is a Forge modpack for 1.18.2 that incorporates "tech", "magic", and "nature" mods, provided by Mekanism (+ OpenComputers 2 and ProjectRed), Apotheosis, and Biomes o' Plenty (+ Serene Seasons and Farmer's Delight) respectively. Additionally, it includes a few "must-have" utility mods including JEI, JourneyMap, OptiFine, and Jade (a successor to WAILA).
 
 ## Installation (Linux)
+TMN can be installed with the install script:
+```shell
+curl -fsSL "https://github.com/k6av/tmn-inventive/raw/main/install.sh" | bash
+```
+
+If your Minecraft installation folder is located somewhere other than `~/.minecraft`, you can use
+```shell
+MCDIR="/some/directory" curl -fsSL "https://github.com/k6av/tmn-inventive/raw/main/install.sh" | bash
+```
 
 ## Mod list
 ### Content
