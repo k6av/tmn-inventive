@@ -17,8 +17,11 @@ chmod +x ./nix-portable || fail
 
 ./nix-portable nix build github:k6av/tmn-inventive -o result || fail
 
-mkdir -p "$HOME/.minecraft" || fail
-cp -r -b ./result/* "$HOME/.minecraft" || fail
+MCDIR="$HOME/.minecraft"
+mkdir -p "$MCDIR" || fail
+cp -r -b ./result/* "$MCDIR" || fail
 
 rm -r ${T}
 echo "Installation complete."
+echo "(Installed to $MCDIR)"
+echo "Thank you for using TMN \"Inventive\" for Forge 1.18.2"
